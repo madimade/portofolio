@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Portfolio</title>
+<link rel="stylesheet" href="r.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.no{
+    position: relative;
+}
+.layer { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding: 0 15px; 
+  transition: height 1s;
+  width: 100%; 
+  height: 0%; 
+  border-radius: 12px; 
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #2969d0); 
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  overflow: hidden; 
+}
+.no:hover .layer { 
+    height: 100%; 
+}
+</style>
+<style>
+body {
+    font-family: 'NotoSans_bold_online_security', 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ffffff;
+}
+h1,h2,h3,h4,h5,h6,p,li,a,button{
+    margin:0;
+}
+.grid-bg{
+    position:fixed;
+    inset:0;
+    background-image: linear-gradient(to right,#2563eb0a 1px,transparent 1px), linear-gradient(to bottom,#2563eb0a 1px,transparent 1px);
+    background-size:4rem 4rem;
+    z-index:-10;
+}
+.linecut{
+    width: 100%;
+    max-width: 600px;
+    height: 1px;
+    background-color: rgb(88, 88, 88);
+    margin: 2rem auto;
+    
+}
+.pl-10{
+width: 650px;
+}
+.l{
+    background: linear-gradient(to right ,#2563eb 0%,#388dc7 100%);
+}
+</style>
+</head>
+<body class="bg-gray-900 relative">
+<nav class="fixed top-0 w-full backdrop-blur bg-[#0B1120]/70 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 md:px-12 py-4">
+    <h1 class="text-2xl font-bold">
+      <span>MADI</span>
+      <span class="text-blue-500">MADE</span>
+    </h1>
+    <ul class="hidden md:flex gap-8 text-white/80">
+      <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-500">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+    </ul>
+    <a href="#contact" class="hidden md:block bg-blue-600 px-5 py-2 rounded hover:bg-blue-700">
+      Let's Talk
+    </a>
+  </div>
+</nav>
+<section id="hero" class="min-h-screen flex items-center px-6 pt-24 bg-[#020617] text-white">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-5">
+    
+    <!-- TEXT -->
+    <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
+      <span class="bg-blue-500/20 px-5 py-2 rounded-full text-blue-400 text-md">
+        Professional Web Developer
+      </span>
+
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mt-6 leading-tight">
+        <span class="block">Hi! I'm</span>
+        <span class="block text-blue-500">Mohamed</span>
+        <span class="block text-blue-500">Ibrahim</span>
+        <span class="block text-blue-500">Abdelsalam</span>
+      </h1>
+
+      <p class="text-white/70 text-xl sm:text-2xl mt-6 max-w-xl">
+        Web Developer & UI Designer specializing in turning ideas into interactive projects using
+        <span class="text-blue-500 font-bold"> React</span>,
+        <span class="text-blue-500 font-bold"> Tailwind</span>, and
+        <span class="text-blue-500 font-bold"> JavaScript</span>.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
+        <a href="#projects" class="bg-blue-600 px-6 py-3 text-lg rounded-xl hover:bg-blue-700 transition-all">
+          View My Work <i class="fa-solid fa-arrow-down text-white"></i>
+        </a>
+
+        <a href="resume.pdf" download
+           class="inline-flex items-center gap-3 px-6 py-3 bg-[#0f172a] border border-blue-500/30 rounded-xl hover:border-blue-500 transition-all group">
+          <span class="font-bold">Download CV</span>
+          <i class="fa-solid fa-download group-hover:translate-y-1 transition-transform"></i>
+        </a>
+      </div>
+
+      <div class="bg-gray-700 h-[1px] w-full mt-10"></div>
+
+      <div class="flex flex-col sm:flex-row gap-5 mb-5 mt-10 justify-center lg:justify-start">
+        <div>
+          <h1 class="text-blue-500 text-3xl font-bold">5+</h1>
+          <p class="text-gray-400">projects</p>
+        </div>
+        <div>
+          <h1 class="text-blue-500 text-3xl font-bold">6+</h1>
+          <p class="text-gray-400">Technologies</p>
+        </div>
+        <div>
+          <h1 class="text-blue-500 text-3xl font-bold">100%</h1>
+          <p class="text-gray-400">Satisfaction</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANIMATION -->
+    <div class="hidden lg:flex justify-center items-center relative py-10">
+
+      <!-- glow -->
+      <div class="absolute w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[80px]"></div>
+
+      <!-- container -->
+      <div class="relative flex items-center justify-center 
+                  w-[300px] h-[300px] lg:w-[450px] lg:h-[450px]
+                  rounded-full overflow-hidden">
+
+        <div class="absolute inset-4 rounded-full border border-blue-500/30 
+              animate-[ping_4s_ease-out_infinite]">
+  </div>
+
+  <!-- دوائر ثابتة -->
+  <div class="absolute inset-8 rounded-full border border-blue-400/40"></div>
+  <div class="absolute inset-16 rounded-full border border-blue-300/60"></div>
+  <div class="absolute inset-24 rounded-full border border-blue-300/60"></div>
+
+        <!-- الشعار -->
+        <div class="relative z-10 text-blue-500 text-[5rem] lg:text-[12rem] animate-pulse">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="about" class="py-24 px-6 bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl md:text-5xl text-center xl:text-center font-bold mb-4">
+      About <span class="text-blue-700">Me</span>
+    </h2>
+
+    <p class="text-center xl:text-center text-xl text-white/70 max-w-2xl xl:max-w-full mb-12">
+      A passionate Web Developer and UI Designer dedicated to crafting exceptional digital experiences.
+    </p>
+    <div class="flex flex-col xl:flex-row gap-12">
+      <div class="flex-1 space-y-6 text-white/80">
+        <p class="text-lg leading-relaxed">
+          I'm Mohamed Ibrahim Abdelsalam, a professional Web Developer and UI Designer with a strong foundation in modern web technologies. I specialize in creating responsive, user-friendly websites and applications that not only look great but also deliver exceptional user experiences.
+        </p>
+        <p class="text-lg leading-relaxed">
+          My approach combines technical expertise with creative design thinking. I believe in writing clean, maintainable code and creating interfaces that are both beautiful and functional. Every project is an opportunity to learn, innovate, and push the boundaries of what's possible on the web.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Whether it's a corporate website, an interactive web application, or a creative landing page, I bring dedication, attention to detail, and a commitment to excellence to every project.
+        </p>
+      </div>
+      <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="p-6 border bg-gray-800/50 border-blue-500/30 rounded-xl hover:border-blue-500 hover:bg-white/10 transition">
+          <div class="flex items-center justify-center w-[40px] h-[40px] bg-[#16213e] border border-blue-700 rounded-[30px]">
+          <i class="fa-solid fa-code" style="color: #2563eb; font-size: 20px;"></i></div>
+          <h3 class="text-xl font-bold mt-3 mb-2">Clean Code</h3>
+          <p class="text-sm text-white/70 mt-2">
+            Writing maintainable, scalable, and efficient code following industry best practices.
+          </p>
+        </div>
+        <div class="p-6 border bg-gray-800/50 border-blue-500/30 rounded-xl hover:border-blue-500 hover:bg-white/10 transition">
+           <div class="flex items-center justify-center w-[40px] h-[40px] bg-[#16213e] border border-blue-700 rounded-[30px]">
+            <i class="fa-solid fa-palette" style="color: #2563eb; font-size: 20px;"></i></div>
+             
+           <h3 class="text-xl font-bold  mt-3 mb-2">Modern Design</h3>
+          <p class="text-sm text-white/70 mt-2">
+            Creating beautiful, user-centric interfaces with attention to detail and aesthetics.
+          </p>
+        </div>
+        <div class="p-6 border bg-gray-800/50 border-blue-500/30 rounded-xl hover:border-blue-500 hover:bg-white/10 transition">
+          <div class="flex items-center justify-center w-[40px] h-[40px] bg-[#16213e] border border-blue-700 rounded-[30px]">
+          <i class="fa-solid fa-bolt" style="color: #2563eb; font-size: 20px;"></i></div>
+          <h3 class="text-xl font-bold mt-3 mb-2">Fast Performance</h3>
+          <p class="text-sm text-white/70 mt-2">
+            Optimizing applications for speed and performance across all devices.
+          </p>
+        </div>
+        <div class="p-6 border bg-gray-800/50 border-blue-500/30 rounded-xl hover:border-blue-500 hover:bg-white/10 transition">
+          <div class="flex items-center justify-center w-[40px] h-[40px] bg-[#16213e] border border-blue-700 rounded-[30px]">
+          <i class="fa-solid fa-award" style="color: #2563eb; font-size: 20px;"></i>
+          </div>
+          <h3 class="text-xl font-bold mt-3 mb-2">Quality Delivery</h3>
+          <p class="text-sm text-white/70 mt-2">
+            Delivering projects on time with exceptional quality and client satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-6 mt-20 justify-center xl:justify-start">
+      <div class=" py-7 px-20 border bg-gray-800/30 border-blue-500/30 rounded-xl hover:border-blue-500 hover:scale-105 transition text-center">
+        <h1 class="text-blue-600 text-5xl font-bold">5+</h1>
+        <p class="text-gray-300">Projects Completed</p>
+      </div>
+      <div class=" py-7 px-20 border bg-gray-800/30 border-blue-500/30 rounded-xl hover:border-blue-500 hover:scale-105 transition text-center">
+        <h1 class="text-blue-600 text-5xl font-bold">100%</h1>
+        <p class="text-gray-300">Client Satisfaction</p>
+      </div>
+      <div class=" py-7 px-20 border bg-gray-800/30 border-blue-500/30 rounded-xl hover:border-blue-500 hover:scale-105 transition text-center">
+        <h1 class="text-blue-600 text-5xl font-bold">6+</h1>
+        <p class="text-gray-300">Technologies Mastered</p>
+      </div>
+      <div class=" py-7 px-20 border bg-gray-800/30 border-blue-500/30 rounded-xl hover:border-blue-500 hover:scale-105 transition text-center">
+        <h1 class="text-blue-600 text-5xl font-bold">24/7</h1>
+        <p class="text-gray-300">Support Available</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="py-16 px-4 sm:px-6 md:px-12">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Tech <span class="text-blue-700">Stack</span></h2>
+    <p class="text-base sm:text-lg text-white/70 max-w-2xl mx-auto mb-10">Proficient in modern web technologies and frameworks to deliver high-quality solutions.</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div class="p-4 hover:text-blue-700 hover:border-blue-700 bg-gray-800 border border-blue-500/30 rounded-xl hover:scale-110  transition "><i class="fa-brands fa-html5" style="color: #E34F26; font-size: 100px;"></i></i><h2 class="text-xl ">HTML</h2> <p class="text-xs text-white/70 mt-1">Expert</p></div>
+      <div class="p-4 hover:text-blue-700 hover:border-blue-700 bg-gray-800 border border-blue-500/30 rounded-xl hover:scale-110 transition"><i class="fa-brands fa-css3-alt" style="color: #1572B6; font-size: 100px;"></i><h2 class="text-xl ">CSS </h2><p class="text-xs text-white/70 mt-1">Expert</p></div>
+      <div class="p-4  hover:text-blue-700 hover:border-blue-700 bg-gray-800 border border-blue-500/30 rounded-xl hover:scale-110 transition"><i class="fa-brands fa-js" style="color: #F7DF1E; font-size: 100px;"></i><h2 class="text-xl ">JavaScript</h2> <p class="text-xs text-white/70 mt-1">Advanced</p></div>
+      <div class="p-4  hover:text-blue-700 hover:border-blue-700 bg-gray-800 border border-blue-500/30 rounded-xl hover:scale-110 transition"><i class="fa-brands fa-react" style="color: #61DAFB; font-size: 100px;"></i><h2 class="text-xl ">React</h2> <p class="text-xs text-white/70 mt-1">Advanced</p></div>
+      <div class="p-4  hover:text-blue-700 hover:border-blue-700 bg-gray-800 border border-blue-500/30 rounded-xl hover:scale-110 transition"><i class="devicon-tailwindcss-original colored "style=" font-size: 100px;"></i><h2 class="text-xl ">Tailwind </h2><p class="text-xs text-white/70 mt-1">Advanced</p></div>
+      <div class="p-4  hover:text-blue-700 hover:border-blue-700 bg-gray-800 border border-blue-500/30 rounded-xl hover:scale-110 transition"><i class="fa-brands fa-bootstrap" style="color: #7952B3; font-size: 100px;"></i><h2 class="text-xl ">Bootstrap </h2><p class="text-xs text-white/70 mt-1">Proficient</p></div>
+    </div>
+    <P class="mt-20 text-gray-400 text-sm">Also experienced in Git, GitHub, Responsive Design, REST APIs, and modern development workflows
+</P>
+  </div>
+</section>
+<section id="projects" class="py-16 px-4 sm:px-6 md:px-12 bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-4">
+      Featured <span class="text-blue-600">Projects</span>
+    </h2>
+    <p class="text-center text-base sm:text-lg text-white/70 max-w-2xl mx-auto mb-12">
+      A collection of my recent work showcasing diverse web development skills and design capabilities.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="border no border-blue-500/30 rounded-xl overflow-hidden bg-gray-800/50 hover:scale-105 transition transform">
+        <img src="./Output1.jpg" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Kids Learning</h3>
+          <p class="text-white/70 text-sm mb-3">
+            An interactive educational platform designed for children with colorful UI and engaging learning activities.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">HTML</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">CSS</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">JavaScript</span>
+          </div>
+          <div class="mb-5 mt-10">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">HTML5 Structure</span>
+    <span class="text-xs text-white">96%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 96%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Interactive JS</span>
+    <span class="text-xs text-white">85%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 85%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">UI Patterns</span>
+    <span class="text-xs text-white">90%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 90%"></div>
+  </div>
+</div>
+        </div>
+        <div class="layer"><a href="https://madimade.github.io/kids/"><div class="flex items-center justify-center w-10 h-10 bg-[#2563eb] rounded-xl">
+  <i class="fa-solid fa-arrow-up-right-from-square text-white text-[25px]"></i>
+</div></a><h1>view project</h1></div>
+      </div>
+      <div class="border no border-blue-500/30 rounded-xl overflow-hidden bg-gray-800/50 hover:scale-105 transition transform">
+        <img src="./g.PNG" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Blumer Corporate Layout</h3>
+          <p class="text-white/70 text-sm mb-3">
+            A modern corporate website layout featuring clean design principles and professional aesthetics.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">HTML</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">CSS</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">Bootstrap</span>
+          </div>
+          <div class="mb-5 mt-10">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Bootstrap 5 Framework</span>
+    <span class="text-xs text-white">98%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 98%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">CSS Components</span>
+    <span class="text-xs text-white">92%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 92%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Corporate UI</span>
+    <span class="text-xs text-white">89%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 89%"></div>
+  </div>
+</div>
+        </div>
+        <div class="layer"><a href="https://madimade.github.io/bulmer/ "><div class="flex items-center justify-center w-10 h-10 bg-[#2563eb] rounded-xl">
+  <i class="fa-solid fa-arrow-up-right-from-square text-white text-[25px]"></i>
+</div></a><h1>view project</h1></div>
+      </div>
+      <div class="border no border-blue-500/30 rounded-xl overflow-hidden bg-gray-800/50 hover:scale-105 transition transform">
+        <img src="./l.PNG" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Tailwind UI Concept</h3>
+          <p class="text-white/70 text-sm mb-3">
+            A modern UI concept showcasing the power and flexibility of Tailwind CSS framework.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">HTML</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">Tailwind CSS</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">JavaScript</span>
+          </div>
+          <div class="mb-5 mt-10">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Tailwind Config</span>
+    <span class="text-xs text-white">99%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 99%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Modern UI Concept</span>
+    <span class="text-xs text-white">95%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 95%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Custom Gradients</span>
+    <span class="text-xs text-white">94%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 94%"></div>
+  </div>
+</div>
+        </div>
+        <div class="layer"><a href="https://madimade.github.io/tail-wind-/?authuser=0 "><div class="flex items-center justify-center w-10 h-10 bg-[#2563eb] rounded-xl">
+  <i class="fa-solid fa-arrow-up-right-from-square text-white text-[25px]"></i>
+</div></a><h1>view project</h1></div>
+      </div>
+      <div class="border no border-blue-500/30 rounded-xl overflow-hidden bg-gray-800/50 hover:scale-105 transition transform">
+        <img src="./Capture.PNG" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Food Lover App Landing</h3>
+          <p class="text-white/70 text-sm mb-3">
+            An appetizing landing page for a food delivery application with stunning visuals and smooth animations.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">HTML</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">CSS</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">JavaScript</span>
+          </div>
+           <div class="w-50">
+  <div class="mb-5 mt-10">
+    <div class="flex justify-between mb-1">
+      <span class="text-xs text-white font-bold uppercase tracking-wider">HTML5 Structure</span>
+      <span class="text-xs text-white">95%</span>
+    </div>
+    <div class="w-full bg-slate-800  rounded-full h-4">
+      <div class="l h-4 rounded-full" style="width: 95%"></div>
+    </div>
+  </div>
+  <div class="mb-5 ">
+    <div class="flex justify-between mb-1">
+      <span class="text-xs text-white font-bold uppercase tracking-wider">CSS3 Styling</span>
+      <span class="text-xs text-white">92%</span>
+    </div>
+    <div class="w-full bg-slate-800 rounded-full h-4">
+      <div class="l h-4 rounded-full" style="width: 92%"></div>
+    </div>
+  </div>
+  <div class="mb-5">
+    <div class="flex justify-between mb-1">
+      <span class="text-xs text-whtie font-bold uppercase tracking-wider">Responsive Design</span>
+      <span class="text-xs text-white">88%</span>
+    </div>
+    <div class="w-full bg-slate-800 rounded-full h-4">
+      <div class=" l h-4 rounded-full" style="width: 88%"></div>
+    </div>
+  </div>
+ </div>
+        </div>
+        <div class="layer"><a href="https://madimade.github.io/food-lover/"><div class="flex items-center justify-center w-10 h-10 bg-[#2563eb] rounded-xl">
+  <i class="fa-solid fa-arrow-up-right-from-square text-white text-[25px]"></i>
+</div></a><h1>view project</h1></div>
+      </div>  
+      <div class="border no border-blue-500/30 rounded-xl overflow-hidden bg-gray-800/50 hover:scale-105 transition transform">
+        <img src="./i.PNG" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Strict Page Business UI</h3>
+          <p class="text-white/70 text-sm mb-3">
+          A professional business interface with a strict, minimalist design approach for corporate environments. </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">HTML</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">CSS</span>
+            <span class="bg-blue-500/20  px-3 py-1 rounded-full text-blue-400 text-xs">JavaScript</span>
+          </div>
+           <div class="mb-5 mt-10">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Pixel Perfect Layout</span>
+    <span class="text-xs text-white">96%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 96%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Business UI Design</span>
+    <span class="text-xs text-white">94%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 94%"></div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="flex justify-between mb-1">
+    <span class="text-xs text-white font-bold uppercase tracking-wider">Pure CSS Precision</span>
+    <span class="text-xs text-white">91%</span>
+  </div>
+  <div class="w-full bg-slate-800 rounded-full h-4">
+    <div class="l h-4 rounded-full" style="width: 91%"></div>
+  </div>
+</div>
+ </div>
+        <div class="layer"><a href="https://madimade.github.io/strict-page/"><div class="flex items-center justify-center w-10 h-10 bg-[#2563eb] rounded-xl">
+  <i class="fa-solid fa-arrow-up-right-from-square text-white text-[25px]"></i>
+ </div></a><h1>view project</h1></div>
+      </div>
+        </div>
+  </div>
+</section>
+<section id="contact" class="py-16 px-4 sm:px-6 md:px-12 bg-[#0b132b]">
+  <h1 class="text-4xl md:text-5xl font-bold text-center">
+    Say <span class="text-blue-600">Hello</span>
+  </h1>
+  <p class="text-center text-gray-400 mt-5">
+    Let's work together on your next project
+  </p>
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 mt-20">
+    <div class="flex flex-col gap-6">
+      <div class="p-8 bg-[#121a2f] rounded-2xl border border-blue-500/20 hover:border-blue-500 transition">
+        <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+        <div class="mb-6 flex items-start gap-3">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#1e293b] shadow-lg border border-white/5 hover:border-blue-600">
+            <i class="fa-regular fa-envelope text-blue-500 text-2xl"></i>
+          </div>
+          <div>
+            <p class="text-gray-400 mb-1">Email</p>
+            <p class="text-lg">madimade444@gmail.com</p>
+            <p class="text-lg">fhfyhgrjoifhyug@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#1e293b] shadow-lg border border-white/5 hover:border-blue-600">
+            <i class="fa-solid fa-phone text-blue-500 text-xl"></i>
+          </div>
+          <div>
+            <p class="text-gray-400 mb-1">Phone</p>
+            <p class="text-lg">01211684714</p>
+            <p class="text-lg">01095760687</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-8 bg-blue-900/40 rounded-2xl border border-blue-500/20 hover:border-blue-500 transition">
+        <h3 class="text-xl font-bold mb-4">Let's Create Something Amazing</h3>
+        <p class="text-gray-300">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+        </p>
+      </div>
+    </div>
+    <div class="w-full bg-[#121a2f] p-8 rounded-2xl border border-blue-500/20 shadow-lg flex flex-col gap-6">
+      <div>
+        <label class="block text-gray-300 mb-2">Your Name</label>
+        <input type="text" placeholder="Enter your name"
+          class="w-full px-4 py-3 rounded-xl bg-[#1a233a] border border-blue-500/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500">
+      </div>
+      <div>
+        <label class="block text-gray-300 mb-2">Your Email</label>
+        <input type="email" placeholder="your.email@example.com"
+          class="w-full px-4 py-3 rounded-xl bg-[#1a233a] border border-blue-500/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500">
+      </div>
+      <div>
+        <label class="block text-gray-300 mb-2">Message</label>
+        <textarea rows="5" placeholder="Tell me about your project..."
+          class="w-full px-4 py-3 rounded-xl bg-[#1a233a] border border-blue-500/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 resize-none"></textarea>
+      </div>
+      <button
+        class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold flex items-center justify-center gap-2 hover:opacity-90">
+        Send Message
+        <i class="fa-regular fa-paper-plane group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+      </button>
+    </div>
+  </div>
+</section>
+<footer class="bg-[#0b132b] text-white py-10 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex gap-4">
+        <a href="#" class="w-12 h-12 flex items-center justify-center rounded-xl border border-blue-500/20 bg-[#121a2f] hover:border-blue-500 transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="w-12 h-12 flex items-center justify-center rounded-xl border border-blue-500/20 bg-[#121a2f] hover:border-blue-500 transition">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="w-12 h-12 flex items-center justify-center rounded-xl border border-blue-500/20 bg-[#121a2f] hover:border-blue-500 transition">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <a href="#top"class="px-6 py-3 rounded-xl border border-blue-500/20 bg-[#121a2f] flex items-center gap-2 hover:border-blue-500 transition">Back to Top
+        <i class="fa-solid fa-chevron-up text-sm group-hover:scale-110 transition-transform"></i>
+      </a>
+    </div>
+    <div class="border-t border-blue-500/20 my-8"></div>
+    <div class="text-center text-gray-400">
+      <p>© 2024 MADI MADE. All rights reserved.</p>
+      <p class="mt-2">Built with React & Tailwind CSS</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
