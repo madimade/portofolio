@@ -9,7 +9,7 @@ This portfolio highlights clean design, interactive sections, and a user-friendl
 
 ## Screenshot
 
-![Portfolio Screenshot](https://drive.google.com/drive/folders/16fjcWyivh_tdTqEz5LB_nR3uFQgaFmFr?usp=drive_link)
+![Portfolio Screenshot](https://drive.google.com/drive/folders/16fjcWyivh_tdTqEz5LB_nR3uFQgaFmFr?usp=sharing)
 
 ## Live Demo
 
