@@ -9,11 +9,11 @@ This portfolio highlights clean design, interactive sections, and a user-friendl
 
 ## Screenshot
 
-![Portfolio Screenshot](YOUR_SCREENSHOT_LINK_HERE)
+![Portfolio Screenshot](https://drive.google.com/drive/folders/16fjcWyivh_tdTqEz5LB_nR3uFQgaFmFr?usp=drive_link)
 
 ## Live Demo
 
-[View Live Demo](YOUR_LIVE_DEMO_LINK_HERE)
+[View Live Demo](https://drive.google.com/drive/folders/1IVd7rco4rPf0honYTQhj0-7x7vJY_cEP?usp=drive_link)
 
 ## Technologies Used
 
