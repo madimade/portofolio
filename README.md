@@ -7,9 +7,9 @@ Frontend Developer
 A modern and responsive personal portfolio website built to showcase projects, skills, and front-end development work.  
 This portfolio highlights clean design, interactive sections, and a user-friendly experience using modern front-end technologies.
 
-## Screenshot link
+## Screenshots link
 
-[Portfolio Screenshot](https://drive.google.com/drive/folders/16fjcWyivh_tdTqEz5LB_nR3uFQgaFmFr?usp=sharing)
+[Portfolio Screenshots](https://drive.google.com/drive/folders/16fjcWyivh_tdTqEz5LB_nR3uFQgaFmFr?usp=sharing)
 
 ## Live Demo link
 
